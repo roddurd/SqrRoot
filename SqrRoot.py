@@ -17,9 +17,9 @@ def guessTheSquare():
                 number = parse(number)
                 guess = 0;
                 alpha = 0.001
-                for i in range(0, 3000):
-                        if (abs(cost(guess, number))<0.00000000001):
-                                if (abs(round(guess) - guess)<0.00000000001):
+                for i in range(0, 5000):
+                        if (abs(cost(guess, number))<0.001):
+                                if (abs(round(guess) - guess)<0.001):
                                         guess = round(guess)
                         else:
                                 guess = guess - alpha * cost(guess, number)
