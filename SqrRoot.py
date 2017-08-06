@@ -5,7 +5,7 @@ def parse(input):
         return "Error";
 def cost(guess, num):
     return guess * guess - num;
-def guessTheSquare():
+def guessTheSquareRoot():
     number = "Error"
     keepGuessing = "yes"
     while (keepGuessing == "yes" or keepGuessing == "ya"):
@@ -27,4 +27,4 @@ def guessTheSquare():
                 guess = guess - alpha * cost(guess, number)
         print("Final guess: " + str(guess))
         keepGuessing = input("Can I try another one? Yes or no: ")
-guessTheSquare();
+guessTheSquareRoot();
