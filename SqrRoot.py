@@ -8,7 +8,7 @@ def cost(guess, num):
 def guessTheSquareRoot():
     number = "Error"
     keepGuessing = "yes"
-    while (keepGuessing == "yes" or keepGuessing == "ya"):
+    while (keepGuessing == "yes"):
         number = input("Enter a valid whole number: ")
         while (parse(number) == "Error"):
             number = input("Enter a valid whole number: ")
